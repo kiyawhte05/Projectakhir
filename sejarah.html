@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="aset/css/stylecss.css">
+</head>
+<body class="bg-[#f4f7fb] font-sans">
+
+    <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="aset/img/logounhas.png" alt="Logo Unhas">
+    <div>
+      <h3>Physics | Hasanuddin University </h3>
+      <p style="font-size: 12px; margin-top:-3px;">Faculty of Mathematics and Natural Sciences</p>
+    </div>
+  </div>
+
+  <div class="nav-right">
+     <!-- HOME (tanpa dropdown) -->
+    <a href="home.html" class="nav-link">Home</a>
+
+    <!-- PROFILE DROPDOWN -->
+    <div class="dropdown">
+      
+      <button class="dropbtn">Profile ▼</button>
+      <div class="dropdown-content">
+        <a href="sejarah.html">History</a>
+        <a href="visi-misi.html">Vision & Mission</a>
+        <a href="strukturdepart.html">Department Structure</a>
+      </div>
+    </div>
+
+    <!-- STUDY PROGRAM DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Study Program ▼</button>
+      <div class="dropdown-content">
+        <a href="sarjana.html">Undergraduate</a>
+        <a href="magister.html">Master Program</a>
+        <a href="doktor.html">Doctoral Program</a>
+      </div>
+    </div>
+
+    <!-- RESEARCH DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Research Group ▼</button>
+      <div class="dropdown-content">
+        <a href="elins.html">Electronics & Instrumentation</a>
+        <a href="teori.html">Theoretical & Computational Physics</a>
+        <a href="optik.html">Optics & Spectroscopy</a>
+        <a href="material.html">Material & Energy</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+     <section class="relative h-96 flex items-center justify-center bg-cover bg-center text-white"
+    style="background-image: url('aset/img/depart.jpeg'); margin-top: 90px;">
+
+    <!-- Overlay full -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <!-- Teks -->
+    <h1 class="text-5xl font-extrabold relative z-10">
+        History
+    </h1>
+    </section>
+
+
+
+    <!-- FLOATING CONTENT CARD -->
+    <section class="max-w-4xl mx-auto -mt-20">
+<div class="content-card relative z-50 bg-white shadow-lg rounded-xl p-6">
+
+    <!-- Breadcrumb -->
+    <div class="text-sm text-gray-500 flex gap-2 mb-6">
+        <span>Home</span>
+        <span>›</span>
+        <span>Profile</span>
+        <span>›</span>
+        <span class="text-black font-semibold">History</span>
+    </div>
+
+    <!-- Title 1 -->
+    <p class="text-gray-700 leading-relaxed mb-8">
+        Departemen Fisika berada di bawah Fakultas Ilmu Pasti dan Ilmu Pengetahuan Alam (FIPPA) yang didirikan pada tanggal 17 Agustus 1963 di Makassar 
+        bersama dengan tiga departemen lainnya, yaitu: Matematika, Kimia, dan Biologi. Pada awalnya, Departemen Fisika memiliki fasilitas dan sumber daya manusia (SDM) 
+        yang sangat terbatas sehingga Departemen Fisika hanya mampu meluluskan mahasiswa hingga tingkat Sarjana Muda. Selanjutnya, para mahasiswa tersebut menyelesaikan 
+        pendidikan sarjananya di UGM Yogyakarta atau ITB Bandung dan kembali ke Unhas untuk mengabdi sebagai dosen. Kondisi ini berlangsung hingga tahun 1980-an.
+        Dengan bertambahnya fasilitas serta berkembangnya sumber daya manusia dan kerja sama dengan beberapa instansi terkait, baik negeri maupun swasta, pada tahun 1983
+        Departemen Fisika mampu menghasilkan Sarjana Fisika pertama (Drs. Piter Rampisela).
+    </p>
+    <p class="text-gray-700 leading-relaxed mb-8">
+        Pada masa kepemimpinan Prof. Dr. Achmad Amiruddin sebagai Rektor Unhas, FIPPA termasuk Departemen Fisika bergabung dengan Fakultas Teknik menjadi Fakultas Sains dan 
+        Teknologi. Pada tahun 1979, Departemen Fisika membina peminatan Geologi yang kemudian berkembang menjadi Departemen Geologi dan bergabung dengan Fakultas Teknik ketika 
+        pada tahun 1983 Fakultas Sains dan Teknologi kembali dipisahkan menjadi Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA) dan Fakultas Teknik.
+    </p>
+    <p class="text-gray-700 leading-relaxed mb-8">
+        Pada tahun 1983 melalui Surat Keputusan Menteri Pendidikan dan Kebudayaan No. 0174/0/1983, Program Studi Fisika resmi dibentuk sebagai bagian dari Departemen Fisika.
+    </p>
+    <p class="text-gray-700 leading-relaxed mb-8">
+        Dengan semakin bertambahnya sumber daya manusia yang dimiliki, pada tahun 1987 Departemen Fisika mengembangkan diri dengan membentuk beberapa laboratorium sebagai wadah 
+        pengembangan ilmu, yaitu: Laboratorium Fisika Teoretik, Laboratorium Fisika Material dan Energi, Laboratorium Elektronika, Laboratorium Fisika Optik dan Laser, Laboratorium Geofisika, dan Bengkel Kerja.
+    </p>
+
+
+
+    
+   
+</div>
+</section>
+
+    <div class="h-32"></div>
+<script>
+  document.querySelectorAll(".dropbtn").forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      let dropdown = this.parentElement;
+      
+      // tutup semua dropdown lain
+      document.querySelectorAll(".dropdown").forEach(d => {
+        if (d !== dropdown) d.classList.remove("show");
+      });
+
+      // toggle dropdown saat ini
+      dropdown.classList.toggle("show");
+      e.stopPropagation();
+    });
+  });
+
+  // klik di luar dropdown → tutup
+  document.addEventListener("click", function() {
+    document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("show"));
+  });
+</script>
+
+<footer>
+  <div class="footer-container">
+    <p>
+      Jl. Perintis Kemerdekaan No.KM.10, Tamalanrea Indah, Kec. Tamalanrea,
+      Kota Makassar, Sulawesi Selatan 90245
+    </p>
+  </div>
+</footer>
+</body>
+</html>

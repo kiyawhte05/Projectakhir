@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda - Fisika Unhas</title>
+  <link rel="stylesheet" href="aset/css/stylecss.css">
+</head>
+
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="aset/img/logounhas.png" alt="Logo Unhas">
+    <div>
+      <h3>Physics | Hasanuddin University </h3>
+      <p style="font-size: 12px; margin-top:-3px;">Faculty of Mathematics and Natural Sciences</p>
+    </div>
+  </div>
+
+  <div class="nav-right">
+     <!-- HOME (tanpa dropdown) -->
+    <a href="home.html" class="nav-link">Home</a>
+
+    <!-- PROFILE DROPDOWN -->
+    <div class="dropdown">
+      
+      <button class="dropbtn">Profile ▼</button>
+      <div class="dropdown-content">
+        <a href="sejarah.html">History</a>
+        <a href="visi-misi.html">Vision & Mission</a>
+        <a href="strukturdepart.html">Department Structure</a>
+      </div>
+    </div>
+
+    <!-- STUDY PROGRAM DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Study Program ▼</button>
+      <div class="dropdown-content">
+        <a href="sarjana.html">Undergraduate</a>
+        <a href="magister.html">Master Program</a>
+        <a href="doktor.html">Doctoral Program</a>
+      </div>
+    </div>
+
+    <!-- RESEARCH DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Research Group ▼</button>
+      <div class="dropdown-content">
+        <a href="elins.html">Electronics & Instrumentation</a>
+        <a href="teori.html">Theoretical & Computational Physics</a>
+        <a href="optik.html">Optics & Spectroscopy</a>
+        <a href="material.html">Material & Energy</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+  <!-- HERO -->
+  <section class="hero" style="background-image: url('aset/img/depart.jpeg'); margin-top: 80px;">
+    <div>
+      <h1 class="hero-title">Department of Physics</h1>
+      <p class="hero-sub">"Embark on a journey to unveil the true nature of reality,  from the grandest cosmic scales to the tiniest subatomic particles."</p>
+    </div>
+  </section>
+
+ <!-- SECTION -->
+<section class="section">
+  <h2 class="section-title">Our Research Areas</h2>
+
+  <div class="card-grid">
+
+    <!-- Electronics -->
+    <div class="card card-row">
+      <img src="aset/img/elins.jpeg" alt="elinsUnhas" class="card-img-small">
+      <div class="card-text">
+        <h3>Electronics & Instrumentation</h3>
+        <p>Fokus pada sistem elektronik, sensor, dan instrumentasi untuk riset serta aplikasi industri.</p>
+      </div>
+    </div>
+
+    <!-- Teori -->
+    <div class="card card-row">
+      <img src="aset/img/teori.jpeg" alt="teorisUnhas" class="card-img-small">
+      <div class="card-text">
+        <h3>Theoretical & Computational Physics</h3>
+        <p>Pengembangan model dan simulasi untuk memahami fenomena fisika secara mendalam.</p>
+      </div>
+    </div>
+    <!-- Material -->
+    <div class="card card-row">
+      <img src="aset/img/material.jpeg" alt="materialUnhas" class="card-img-small">
+      <div class="card-text">
+        <h3>Material & Energy</h3>
+        <p>Riset tentang material baru serta teknologi energi berkelanjutan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll(".dropbtn").forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      let dropdown = this.parentElement;
+      
+      // tutup semua dropdown lain
+      document.querySelectorAll(".dropdown").forEach(d => {
+        if (d !== dropdown) d.classList.remove("show");
+      });
+
+      // toggle dropdown saat ini
+      dropdown.classList.toggle("show");
+      e.stopPropagation();
+    });
+  });
+
+  // klik di luar dropdown → tutup
+  document.addEventListener("click", function() {
+    document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("show"));
+  });
+</script>
+
+<footer>
+  <div class="footer-container">
+    <p>
+      Jl. Perintis Kemerdekaan No.KM.10, Tamalanrea Indah, Kec. Tamalanrea,
+      Kota Makassar, Sulawesi Selatan 90245
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

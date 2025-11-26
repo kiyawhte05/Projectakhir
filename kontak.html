@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | Praktikum Elektronika</title>
+  <link rel="stylesheet" href="aset/css/stylecss.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="aset/img/logounhas.png" alt="Logo Unhas">
+      <div>
+        <h3>Physics | Hasanuddin University</h3>
+        <p style="font-size: 12px; margin-top:-3px;">
+          Faculty of Mathematics and Natural Sciences
+        </p>
+      </div>
+    </div>
+
+    <ul class="flex space-x-6 text-gray-700 font-medium">
+      <li><a href="elins.html" class="hover:text-red-600">Back</a></li>
+      <li><a href="galeri.html" class="hover:text-red-600">Galeri</a></li>
+      <li><a href="kontak.html" class="text-red-600 font-semibold">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="h-72 bg-cover bg-center flex items-center justify-center mt-16"
+           style="background-image: url('aset/img/elins.jpeg');">
+
+      <div class="bg-black bg-opacity-40 px-10 py-6 rounded-xl">
+          <h1 class="text-white text-4xl font-bold">Hubungi Kami</h1>
+          <p class="text-gray-200 mt-2">Silakan tinggalkan pesan Anda di bawah</p>
+      </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <div class="max-w-3xl mx-auto py-14 px-6">
+
+      <div class="bg-white shadow-lg rounded-xl p-10">
+        
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+          Formulir Kontak
+        </h2>
+
+        <form action="https://formsubmit.co/taskiyatunnaps23h@student.unhas.ac.id" method="POST" class="space-y-4">
+
+            <!-- Hidden settings -->
+            <input type="hidden" name="_subject" value="Pesan Baru dari Website ELINS">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <div>
+                <label class="block font-medium mb-1">Nama Lengkap</label>
+                <input type="text" name="nama" required
+                    class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-red-600">
+            </div>
+
+            <div>
+                <label class="block font-medium mb-1">Email</label>
+                <input type="email" name="email" required
+                    class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-red-600">
+            </div>
+
+            <div>
+                <label class="block font-medium mb-1">Pesan</label>
+                <textarea name="pesan" required rows="4"
+              class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-red-600"></textarea>
+            </div>
+
+            <button type="submit"
+                    class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold">
+                Kirim Pesan
+            </button>
+
+        </form>
+
+      </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <p>
+        Jl. Perintis Kemerdekaan No.KM.10, Tamalanrea Indah, Kec. Tamalanrea,
+        Kota Makassar, Sulawesi Selatan 90245
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

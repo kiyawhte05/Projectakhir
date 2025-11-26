@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Praktikum Elektronika</title>
+    <link rel="stylesheet" href="aset/css/stylecss.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- NAVBAR -->
+ <nav class="navbar">
+  <div class="nav-left">
+    <img src="aset/img/logounhas.png" alt="Logo Unhas">
+    <div>
+      <h3>Physics | Hasanuddin University</h3>
+      <p style="font-size: 12px; margin-top:-3px;">Faculty of Mathematics and Natural Sciences</p>
+    </div>
+  </div>
+      <ul class="flex space-x-6 text-gray-700 font-medium">
+        <li><a href="elins.html" class="hover:text-red-600">Back</a></li>
+        <li><a href="galeri.html" class="text-red-600 font-semibold">Galeri</a></li>
+        <li><a href="kontak.html" class="hover:text-red-600">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="h-72 bg-cover bg-center flex items-center justify-center mt-16"
+           style="background-image: url('aset/img/elins.jpeg');">
+
+      <div class="bg-black bg-opacity-40 px-10 py-6 rounded-xl">
+          <h1 class="text-white text-4xl font-bold">Galeri Praktikum Elektronika</h1>
+          <p class="text-gray-200 mt-2">Dokumentasi kegiatan laboratorium & praktikum mahasiswa</p>
+      </div>
+  </section>
+
+  <!-- GALERI -->
+  <div class="max-w-7xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Dokumentasi Kegiatan</h2>
+
+    <!-- GRID FOTO -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <!-- FOTO 1 -->
+        <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+         <img src="aset/img/labprk.jpeg" class="w-full h-56 object-cover">
+             <div class="p-4 text-center">
+          <p class="font-semibold text-gray-700">Praktikum Mikrokontroler</p>
+             </div>
+        </div>  
+
+        <!-- FOTO 2 -->
+        <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+         <img src="aset/img/klpdandi.jpeg" class="w-full h-56 object-cover">
+             <div class="p-4 text-center">
+          <p class="font-semibold text-gray-700">Praktikum Mikrokontroler</p>
+             </div>
+      </div>
+
+        <!-- FOTO 3 -->
+        <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+         <img src="aset/img/klpruth.jpeg" class="w-full h-56 object-cover">
+             <div class="p-4 text-center">
+          <p class="font-semibold text-gray-700">Praktikum Mikrokontroler</p>
+             </div>
+        </div>
+
+         <!-- FOTO 4 -->
+        <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+         <img src="aset/img/foto.jpeg" class="w-full h-56 object-cover">
+             <div class="p-4 text-center">
+          <p class="font-semibold text-gray-700">Foto Bersama Hari Batik</p>
+             </div>
+        </div>
+        <!-- FOTO 5 -->
+        <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+         <img src="aset/img/jantung.jpeg" class="w-full h-56 object-cover">
+             <div class="p-4 text-center">
+          <p class="font-semibold text-gray-700">Praktikum Sensor Jantung</p>
+             </div>
+        </div>
+        <!-- FOTO 6 -->
+        <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+         <img src="aset/img/aliran.jpeg" class="w-full h-56 object-cover">
+             <div class="p-4 text-center">
+          <p class="font-semibold text-gray-700">Praktikum Sensor Aliran</p>
+             </div>
+        </div>
+         <!-- FOTO 7 -->
+        <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+         <img src="aset/img/jarak.jpeg" class="w-full h-56 object-cover">
+             <div class="p-4 text-center">
+            <p class="font-semibold text-gray-700">Praktikum Sensor Jarak</p>
+             </div>
+        </div>
+        <!-- FOTO 8 -->
+        <div class="bg-white rounded-xl shadow hover:scale-105 transition overflow-hidden">
+         <img src="aset/img/seminar.jpeg" class="w-full h-56 object-cover">
+             <div class="p-4 text-center">
+          <p class="font-semibold text-gray-700">Seminar Internal</p>
+             </div>
+        </div>
+  </div>
+
+ <script>
+document.getElementById("thesisBtn").addEventListener("click",function(){
+  document.getElementById("thesisList").classList.toggle("hidden");
+});
+</script>
+
+<script>
+  document.querySelectorAll(".dropbtn").forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      let dropdown = this.parentElement;
+      
+      // tutup semua dropdown lain
+      document.querySelectorAll(".dropdown").forEach(d => {
+        if (d !== dropdown) d.classList.remove("show");
+      });
+
+      // toggle dropdown saat ini
+      dropdown.classList.toggle("show");
+      e.stopPropagation();
+    });
+  });
+
+  // klik di luar dropdown → tutup
+  document.addEventListener("click", function() {
+    document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("show"));
+  });
+</script>
+  <footer>
+  <div class="footer-container">
+    <p>
+      Jl. Perintis Kemerdekaan No.KM.10, Tamalanrea Indah, Kec. Tamalanrea,
+      Kota Makassar, Sulawesi Selatan 90245
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

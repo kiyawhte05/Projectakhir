@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theoretical & Computational Physics</title>
+  <link rel="stylesheet" href="aset/css/stylecss.css">
+</head>
+
+<body>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="aset/img/logounhas.png" alt="Logo Unhas">
+    <div>
+      <h3>Physics | Hasanuddin University</h3>
+      <p style="font-size: 12px; margin-top:-3px;">Faculty of Mathematics and Natural Sciences</p>
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <!-- HOME (tanpa dropdown) -->
+     <a href="home.html" class="nav-link">Home</a>
+
+    <!-- PROFILE DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Profile ▼</button>
+      <div class="dropdown-content">
+        <a href="sejarah.html">History</a>
+        <a href="visi-misi.html">Vision & Mission</a>
+        <a href="strukturdepart.html">Department Structure</a>
+      </div>
+    </div>
+
+    <!-- STUDY PROGRAM DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Study Program ▼</button>
+      <div class="dropdown-content">
+        <a href="sarjana.html">Undergraduate</a>
+        <a href="magister.html">Master Program</a>
+        <a href="doktor.html">Doctoral Program</a>
+      </div>
+    </div>
+
+    <!-- RESEARCH DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Research Group ▼</button>
+      <div class="dropdown-content">
+        <a href="elins.html">Electronics & Instrumentation</a>
+        <a href="teori.html">Theoretical & Computational Physics</a>
+        <a href="optik.html">Optics & Spectroscopy</a>
+        <a href="material.html">Material & Energy</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+  <!-- HERO SUBPAGE -->
+ <section class="relative h-96 flex items-center justify-center bg-cover bg-center text-white"
+    style="background-image: url('aset/img/elinsdepan.jpg'); margin-top: 90px;">
+
+    <!-- Overlay full -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <!-- Teks -->
+    <h1 class="text-5xl font-extrabold relative z-10">
+        Electronics & Instrumentation
+    </h1>
+
+</section>
+
+
+
+  <!-- MAIN CONTENT GRID (LEFT = Staff & Students, RIGHT = Lab Info) -->
+<div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6">
+
+  <!-- LEFT COLUMN (STAFF + ACTIVE STUDENTS) -->
+  <div>
+
+    <!-- RELATED STAFF -->
+    <div class="bg-white shadow-lg rounded-lg p-4 mb-6">
+      <h2 class="text-red-600 text-xl font-bold mb-4 flex items-center gap-2">
+        👥 Related Staff
+      </h2>
+
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <img src="aset/img/bualkar.jpg" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Prof. Dr. Bualkar Abdullah, M.Eng.Sc.</h3>
+            <p class="text-gray-500 text-sm">Guru Besar / IV.d</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <img src="aset/img/arifin.jpg" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Prof. Dr. Arifin, M.T.</h3>
+            <p class="text-gray-500 text-sm">Guru Besar / IV.d</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <img src="aset/img/yaya.jpg" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Dr. Ir. Bidayatullah Arminah, M.T.</h3>
+            <p class="text-gray-500 text-sm">Lektor Kepala / IV.a</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTIVE STUDENTS -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <h2 class="text-red-600 text-xl font-bold mb-4 flex items-center gap-2">
+        🎓 Active Students
+      </h2>
+
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Miswanja Batu Padang</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231004</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Ruth Lebang</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231005</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Dandi Hartono</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231007</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="aset/img/deva.jpg" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Sheira Abideva. H</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231022</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Ansar Mubaraq</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231043</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Febrinesya Alfha Tandi Lion</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231063</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Juliyati Puspita Sari</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231052</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Nur Alik Katu</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231041</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Nur Amalia</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231067</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="aset/img/uni.jpg" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Sri Wahyuni</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231053</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="aset/img/kiya2.jpeg" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Taskiyatunnaps</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231055</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Ulva Asriani Nur</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231037</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Yemima Melanie Surya</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231042</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="aset/img/asnawi.jpg" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Muh. Asnawi</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231027</p>
+          </div>
+        </div>
+      </div>
+            <div class="mt-10">
+        <h2 class="text-2xl font-bold text-red-600 mb-3">
+          Galeri Dokumentasi
+        </h2>
+
+        <p class="text-gray-700 mb-4">
+          Lihat dokumentasi lengkap kegiatan praktikum dan aktivitas laboratorium.
+        </p>
+
+        <a 
+          href="galeri.html"
+          class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition">
+          Buka Galeri →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN (LAB DESCRIPTION + THESIS LIST) -->
+  <div>
+
+    <!-- LAB DESCRIPTION -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <h2 class="text-red-600 text-xl font-bold mb-2">Lab Description</h2>
+      <p class="text-gray-700 text-sm mb-4">
+        Kelompok keahlian Fisika Elektronika dan Instrumentasi PSF Universitas Hasanuddin memiliki beberapa 
+        mata kuliah pilihan yang ditawarkan, antara lain: Mikroprosesor, Mikrokontroler dan Antarmuka, Kendali Otomatis, 
+        Elektronika Lanjut, dan Instrumentasi Medis. Mata kuliah instrumentasi medis merupakan mata kuliah wajib bagi mahasiswa yang mengambil peminatan Fisika Medis. 
+        Kelompok keahlian Sistem Elektronika dan Instrumentasi memiliki beberapa topik penelitian, termasuk: antena, sensor, dan alat ukur berbasis elektronika.
+      </p>
+
+    <img src="aset/img/elins.jpeg" class="w-full rounded-lg mb-6 object-contain">
+      
+      <h2 class="text-red-600 text-xl font-bold mb-4">Thesis Titles in Electronics & Instrumentation</h2>
+
+      <button id="thesisBtn" 
+        class="w-full bg-red-600 text-white py-2 rounded-lg mb-4 hover:bg-red-700 transition">
+        Show / Hide Thesis List
+      </button>
+
+      <ul id="thesisList" class="list-disc ml-6 space-y-2 text-gray-700 hidden">
+        <li>Rancang Bangun Sensor Arus Listrik Berbasis Serat Optik Plastik oleh Yeti Ariyani (2017).</li>
+        <li>Sistem Penerangan Rumah Menggunakan Light Emitting Diode (LED) Bertenaga Surya oleh Juritno (2017).</li>
+        <li>Sensor Serat Optik Plastik Berbasis Modulasi Intensitas Cahaya untuk Pengukuran Massa oleh Yusran (2016).</li>
+        <li>Perancangan dan Pemuatan Antena Mikrostrip Slot Bowtie Ganda Satu larik dengan Coplanar Waveguide untuk 
+          Aplikasi GPS pada Frekuensi 1,575 GHz oleh Ahmad Ramadhanan (2016).</li>
+        <li>Sensor Berbasis Serat Optik Plastik untuk Pengukuran Glukosa pada Darah dan Larutan Gula oleh Rosdia (2016).</li>
+        <li>Pembuatan Superkapasitor menggunakan Arang Aktif dari Tempurung Kelapa dengan Separator Serutan Kayu oleh Nurul Sarina Muchtar (2016).</li>
+        <li>Desain dan Implementasi Sistem Alat Ukur Kelembaban Tanah oleh Djunaiddin (2015).</li>
+        <li>Rancang Bangun Peralatan Monitoring Radiasi Sinar-X di Ruang Radiodiagnostik Berbasis Mikrokontroller Atmega 16 oleh Abdul Anrifai (2015).</li>
+        <li>Rancang Bangun Prototipe Robot Penejelajah Berbasis Mikrokontroller Arduino Duemilanove dengan Antar Muka LabView oleh Muhammad Amzar (2014).</li>
+        <li>Identifikasi Karakter Temporal dan Potensial Listrik Statis dari Kompleks QRS dan Segmen ST EKG pada Penederita Kelainan Jantung Left Ventricular Hypertrophy oleh Hariati (2014).</li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+document.getElementById("thesisBtn").addEventListener("click",function(){
+  document.getElementById("thesisList").classList.toggle("hidden");
+});
+</script>
+
+<script>
+  document.querySelectorAll(".dropbtn").forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      let dropdown = this.parentElement;
+      
+      // tutup semua dropdown lain
+      document.querySelectorAll(".dropdown").forEach(d => {
+        if (d !== dropdown) d.classList.remove("show");
+      });
+
+      // toggle dropdown saat ini
+      dropdown.classList.toggle("show");
+      e.stopPropagation();
+    });
+  });
+
+  // klik di luar dropdown → tutup
+  document.addEventListener("click", function() {
+    document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("show"));
+  });
+</script>
+  <footer>
+  <div class="footer-container">
+    <p>
+      Jl. Perintis Kemerdekaan No.KM.10, Tamalanrea Indah, Kec. Tamalanrea,
+      Kota Makassar, Sulawesi Selatan 90245
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

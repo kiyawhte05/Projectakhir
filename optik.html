@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optics & Spectroscopy</title>
+  <link rel="stylesheet" href="aset/css/stylecss.css">
+</head>
+
+<body>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="aset/img/logounhas.png" alt="Logo Unhas">
+    <div>
+      <h3>Physics | Hasanuddin University</h3>
+      <p style="font-size: 12px; margin-top:-3px;">Faculty of Mathematics and Natural Sciences</p>
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <!-- HOME (tanpa dropdown) -->
+     <a href="home.html" class="nav-link">Home</a>
+
+    <!-- PROFILE DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Profile ▼</button>
+      <div class="dropdown-content">
+        <a href="sejarah.html">History</a>
+        <a href="visi-misi.html">Vision & Mission</a>
+        <a href="strukturdepart.html">Department Structure</a>
+      </div>
+    </div>
+
+    <!-- STUDY PROGRAM DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Study Program ▼</button>
+      <div class="dropdown-content">
+        <a href="sarjana.html">Undergraduate</a>
+        <a href="magister.html">Master Program</a>
+        <a href="doktor.html">Doctoral Program</a>
+      </div>
+    </div>
+
+    <!-- RESEARCH DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Research Group ▼</button>
+      <div class="dropdown-content">
+        <a href="elins.html">Electronics & Instrumentation</a>
+        <a href="teori.html">Theoretical & Computational Physics</a>
+        <a href="optik.html">Optics & Spectroscopy</a>
+        <a href="material.html">Material & Energy</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+  <!-- HERO SUBPAGE -->
+ <section class="relative h-96 flex items-center justify-center bg-cover bg-center text-white"
+    style="background-image: url('aset/img/optik.jpg'); margin-top: 90px;">
+
+    <!-- Overlay full -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <!-- Teks -->
+    <h1 class="text-5xl font-extrabold relative z-10">
+       Optics & Spectroscopy
+    </h1>
+
+</section>
+
+
+
+  <!-- MAIN CONTENT GRID (LEFT = Staff & Students, RIGHT = Lab Info) -->
+<div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6">
+
+  <!-- LEFT COLUMN (STAFF + ACTIVE STUDENTS) -->
+  <div>
+
+    <!-- RELATED STAFF -->
+    <div class="bg-white shadow-lg rounded-lg p-4 mb-6">
+      <h2 class="text-red-600 text-xl font-bold mb-4 flex items-center gap-2">
+        👥 Related Staff
+      </h2>
+
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <img src="aset/img/syamsir.jpg" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Prof. Dr. Syamsir Dewang, M.Eng.Sc.</h3>
+            <p class="text-gray-500 text-sm">Guru Besar / IV.d</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <img src="aset/img/bannu.jpg" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Bannu, S.Si, M.Si.</h3>
+            <p class="text-gray-500 text-sm">Lektor / III.c</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Dr. Sri Dewi Astuty Ilyas, S.Si, M.Si.</h3>
+            <p class="text-gray-500 text-sm">Lektor / III.d</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTIVE STUDENTS -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <h2 class="text-red-600 text-xl font-bold mb-4 flex items-center gap-2">
+        🎓 Active Students
+      </h2>
+
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Tasyha Sri Desiana</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231049</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">Suci Rahmayada</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231059</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/70" class="w-16 h-16 rounded-full">
+          <div>
+            <h3 class="font-semibold">St. Rahmayanti</h3>
+            <p class="text-gray-500 text-sm">NIM: H021231044</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT COLUMN (LAB DESCRIPTION + THESIS LIST) -->
+  <div>
+
+    <!-- LAB DESCRIPTION -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <h2 class="text-red-600 text-xl font-bold mb-2">Lab Description</h2>
+      <p class="text-gray-700 text-sm mb-4">
+        Pada awalnya, kelompok keahlian ini bernama Kelompok Keahlian Optik dan Aplikasi Laser, yang mulai ada sejak tahun 1999. 
+        Seiring perkembangan bidang optik, pada tahun 2002 kelompok keahlian ini berubah nama menjadi Kelompok Riset Optik dan Spektroskopi.
+        Keberadaan kelompok keahlian ini didukung oleh berbagai peralatan, di antaranya 2 laser He-Ne (yang kini sudah tidak berfungsi), 
+        serta beberapa metode pengamatan seperti Interferometer Mach-Zehnder, Interferometer Fabry-Perot, dan perangkat optik lainnya seperti meja optik, 
+        penahan lensa dan cermin, serta optical power meter yang digunakan bersama dengan Kelompok Riset Sistem Elektronika dan Instrumentasi.
+        Kerja sama tersebut juga menyediakan ruang gelap (dark room) optik untuk keperluan aktivitas optik yang membutuhkan kondisi ruangan gelap.
+      </p>  
+
+      <img src="aset/img/optik2.jpg" 
+       class="w-full rounded-lg mb-6 object-contain">
+
+      <h2 class="text-red-600 text-xl font-bold mb-4">Thesis Titles in Optics & Spectroscopy</h2>
+
+      <button id="thesisBtn" 
+        class="w-full bg-red-600 text-white py-2 rounded-lg mb-4 hover:bg-red-700 transition">
+        Show / Hide Thesis List
+      </button>
+
+      <ul id="thesisList" class="list-disc ml-6 space-y-2 text-gray-700 hidden">
+        <li>Analisis Kuantisasi Warna LED dan Paduan Warna Laser Menggunakan Diagram Kromatisitas CIE 1931 oleh Selvina (2017)</li>
+        <li>Analisis Resolusi Kontras Gambar CT Scan Menggunakan Phantom American College of Radiology oleh Hasnani (2017)</li>
+        <li>Penentuan Konsentrasi dan Nilai Faktor Transfer Radionuklida Alami dari Tanah ke Kopi Toraja Menggunakan Spektrometer Gamma oleh Meirisa Ambilinggi (2017)</li>
+        <li>Penentuan Konsentrasi Radionuklida Alami dalam Bahan Bangunan oleh Hendrik Arif (2016)</li>
+        <li>Konsentrasi Gas Radon dan Thoron di Tanah dan Udara menggunakan Rad7 di Desa Takandiang, Kecamatan Tasalang, Kabupaten Mamuju oleh An Nisa Tenri Maya (2016)</li>
+        <li>Analisis Elemen Debu di Lima Titik di Kota Makassar menggunakan XRF oleh Ruman B. Rantegau (2016)</li>
+        <li>Analisis Kandungan Sagu dengan Peralatan XRF dan FTIR oleh Liayyil Liyaomil F. (2016)</li>
+        <li>Pengukuran Konsentrasi Radon 222 dan Torium menggunakan Jejak Nuklir Cr-139 di Gua Londa dan Gua Kete’ Kesu oleh Martono Manda (2016)</li>
+        <li>Pengukuran Dosis Paparan Radiasi untuk Pekerja Unit Radiasi Brachytherapy Menggunakan Dosimeter Termoluminesensi oleh Nengsi Patandung (2015)</li>
+        <li>Pemetaan Penyebaran Kebisingan yang Dihasilkan oleh Pabrik PT Semen Tonasa Pangkep oleh Jaya Suharja (2015)</li>
+
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+document.getElementById("thesisBtn").addEventListener("click",function(){
+  document.getElementById("thesisList").classList.toggle("hidden");
+});
+</script>
+
+<script>
+  document.querySelectorAll(".dropbtn").forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      let dropdown = this.parentElement;
+      
+      // tutup semua dropdown lain
+      document.querySelectorAll(".dropdown").forEach(d => {
+        if (d !== dropdown) d.classList.remove("show");
+      });
+
+      // toggle dropdown saat ini
+      dropdown.classList.toggle("show");
+      e.stopPropagation();
+    });
+  });
+
+  // klik di luar dropdown → tutup
+  document.addEventListener("click", function() {
+    document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("show"));
+  });
+</script>
+  <footer>
+  <div class="footer-container">
+    <p>
+      Jl. Perintis Kemerdekaan No.KM.10, Tamalanrea Indah, Kec. Tamalanrea,
+      Kota Makassar, Sulawesi Selatan 90245
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

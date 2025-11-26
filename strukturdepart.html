@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Department Structure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="aset/css/stylecss.css">
+</head>
+<body class="bg-[#f4f7fb] font-sans">
+
+    <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="aset/img/logounhas.png" alt="Logo Unhas">
+    <div>
+      <h3>Physics | Hasanuddin University </h3>
+      <p style="font-size: 12px; margin-top:-3px;">Faculty of Mathematics and Natural Sciences</p>
+    </div>
+  </div>
+
+  <div class="nav-right">
+     <!-- HOME (tanpa dropdown) -->
+    <a href="home.html" class="nav-link">Home</a>
+
+    <!-- PROFILE DROPDOWN -->
+    <div class="dropdown">
+      
+      <button class="dropbtn">Profile ▼</button>
+      <div class="dropdown-content">
+        <a href="sejarah.html">History</a>
+        <a href="visi-misi.html">Vision & Mission</a>
+        <a href="strukturdepart.html">Department Structure</a>
+      </div>
+    </div>
+
+    <!-- STUDY PROGRAM DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Study Program ▼</button>
+      <div class="dropdown-content">
+        <a href="sarjana.html">Undergraduate</a>
+        <a href="magister.html">Master Program</a>
+        <a href="doktor.html">Doctoral Program</a>
+      </div>
+    </div>
+
+    <!-- RESEARCH DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Research Group ▼</button>
+      <div class="dropdown-content">
+        <a href="elins.html">Electronics & Instrumentation</a>
+        <a href="teori.html">Theoretical & Computational Physics</a>
+        <a href="optik.html">Optics & Spectroscopy</a>
+        <a href="material.html">Material & Energy</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+     <section class="relative h-96 flex items-center justify-center bg-cover bg-center text-white"
+    style="background-image: url('aset/img/depart.jpeg'); margin-top: 90px;">
+
+    <!-- Overlay full -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <!-- Teks -->
+    <h1 class="text-5xl font-extrabold relative z-10">
+        Department Structure
+    </h1>
+    </section>
+
+
+
+    <!-- FLOATING CONTENT CARD -->
+    <section class="max-w-4xl mx-auto -mt-20">
+<div class="content-card relative z-50 bg-white shadow-lg rounded-xl p-6">
+
+    <!-- Breadcrumb -->
+    <div class="text-sm text-gray-500 flex gap-2 mb-6">
+        <span>Home</span>
+        <span>›</span>
+        <span>Profile</span>
+        <span>›</span>
+        <span class="text-black font-semibold">Department Structure</span>
+    </div>
+
+    <!-- Title 1 -->
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-6">Struktur</h2>
+    <img src="aset/img/struktur.jpg" 
+       class="w-full rounded-lg mb-6 object-contain">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-6">Staff Akademik</h2>
+    <img src="aset/img/staffpengajar.png" 
+       class="w-full rounded-lg mb-6 object-contain">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-6">Staff Non-Akademik</h2>
+    <img src="aset/img/stafftendik.jpg" 
+       class="w-full rounded-lg mb-6 object-contain">
+
+
+
+
+    
+    
+
+
+
+    
+   
+</div>
+</section>
+
+    <div class="h-32"></div>
+<script>
+  document.querySelectorAll(".dropbtn").forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      let dropdown = this.parentElement;
+      
+      // tutup semua dropdown lain
+      document.querySelectorAll(".dropdown").forEach(d => {
+        if (d !== dropdown) d.classList.remove("show");
+      });
+
+      // toggle dropdown saat ini
+      dropdown.classList.toggle("show");
+      e.stopPropagation();
+    });
+  });
+
+  // klik di luar dropdown → tutup
+  document.addEventListener("click", function() {
+    document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("show"));
+  });
+</script>
+
+<footer>
+  <div class="footer-container">
+    <p>
+      Jl. Perintis Kemerdekaan No.KM.10, Tamalanrea Indah, Kec. Tamalanrea,
+      Kota Makassar, Sulawesi Selatan 90245
+    </p>
+  </div>
+</footer>
+</body>
+</html>
